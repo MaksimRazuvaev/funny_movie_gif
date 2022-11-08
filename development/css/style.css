@@ -1,4 +1,10 @@
-
+html {
+  background-color: rgb(47, 144, 223);
+}
+body {
+  margin-top: 30rem;
+  margin-bottom: 30rem;
+}
 
 h1 {
   text-align: center;
