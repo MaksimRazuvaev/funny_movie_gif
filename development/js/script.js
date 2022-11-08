@@ -12,27 +12,29 @@ function handleSearchFormSubmit(event) {
     event.preventDefault();
   
     var searchInputVal = document.querySelector('#search-input').value;
-    var formatInputVal = document.querySelector('#format-input').value;
+    var mediaTypetVal = document.querySelector('#media-input').value;
   
     if (!searchInputVal) {
       console.error('You need a search input value!');
       return;
     }
   
-    searchApi(searchInputVal, formatInputVal);
+    searchOMBdApi(searchInputVal, mediaTypetVal);
   }
 
-  // create url string
-  function searchApi(query, format) {
-    var locQueryUrl = 'https://www.loc.gov/search/?fo=json';
+
+
+  // request 
+  function searchOMBdApi(query, type) {
+    var oMBdAPI = "http://www.omdbapi.com/?i=tt3896198&apikey=f90595f6";
   
-    if (format) {
-      locQueryUrl = 'https://www.loc.gov/' + format + '/?fo=json';
+    oMBdAPI = oMBdAPI + '&t=' + query;
+
+    if (type) {
+      oMBdAPI = oMBdAPI + '&type=' + type;
     }
   
-    locQueryUrl = locQueryUrl + '&q=' + query;
-  
-    fetch(locQueryUrl)
+    fetch(oMBdAPI)
       .then(function (response) {
         if (!response.ok) {
           throw response.json();
@@ -40,19 +42,14 @@ function handleSearchFormSubmit(event) {
   
         return response.json();
       })
-      .then(function (locRes) {
-        // write query to page so user knows what they are viewing
-        resultTextEl.textContent = locRes.search.query;
-  
-        console.log(locRes);
-  
-        if (!locRes.results.length) {
+      .then(function (oMBdreply) {
+
+        if (!oMBdreply.title) {
           console.log('No results found!');
-          resultContentEl.innerHTML = '<h3>No results found, search again!</h3>';
         } else {
           resultContentEl.textContent = '';
           for (var i = 0; i < locRes.results.length; i++) {
-            printResults(locRes.results[i]);
+            printResults(oMBdreply);
           }
         }
       })
@@ -61,5 +58,16 @@ function handleSearchFormSubmit(event) {
       });
   }
 
-
-
+// function to print result for oMBD
+function printResults(oMBdreply){
+  
+  //DOM hook   .innerHTML = searchResult.title;
+  //DOM hook   .innerHTML = searchResult.year;
+  //DOM hook   .innerHTML = searchResult.rated;
+  //DOM hook   .innerHTML = searchResult.released;
+  //DOM hook   .innerHTML = searchResult.genre;
+  //DOM hook   .innerHTML = searchResult.director;
+  //DOM hook   .innerHTML = searchResult.runtime;
+  //DOM hook   .innerHTML = searchResult.ratings;
+  //DOM hook   .innerHTML = searchResult.plot;
+}
