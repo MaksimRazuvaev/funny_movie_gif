@@ -21,7 +21,6 @@ var goBackEl = document.getElementById('TBD') // this is the back button
 
 
 
-
 // event listeners
 
 searchBtnEl.addEventListener("click", function (event){
