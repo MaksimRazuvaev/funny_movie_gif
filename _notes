@@ -30,6 +30,7 @@ Kyle--
 --Will make sure to merge to develop branch, NOT the main branch
 --Getting a list of priorities together 
 --Reading documentation on Bulma CSS framework
+--began structuring 1st html page, attempting to center all items in main viewport
 
 
 Maksim--
@@ -38,4 +39,4 @@ Maksim--
 
 Nathan--
 -- setting up the HTML and clarifing classes and Id's for the hooks 
-
+-- checking out Bulma Documentation for pair programming with Kyle
