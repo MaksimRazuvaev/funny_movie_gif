@@ -12,7 +12,6 @@ var searchNameEl = document.getElementById('TBD') // this is the text field on f
 var searchType = searchFilterEl.value;
 var searchWord = searchNameEl.value;
 
-// comment
 
 
 
@@ -20,7 +19,7 @@ var searchWord = searchNameEl.value;
 
 searchBtnEl.addEventListener("click", function (event){
     // display the search results html page 
-    window.location = 'index2.html' // whatever this html is is
+    window.location = 'search-results.html' // whatever this html is is
 
 })
 
