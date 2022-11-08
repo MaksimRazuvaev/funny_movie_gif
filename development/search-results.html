@@ -1,48 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Results | Movie and TV Gif Search</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
-</head>
+  </head>
 
-<body>
-    
-    <main>
-        <h2>Results</h2>
-
-        <div>
-            <h3 id="title"></h3>
-            <p id="year"></p>
-            <p id="rated"></p>    
-            <p id="released"></p>    
-            <p id="genre"></p>    
-            <p id="director"></p>    
-            <p id="runtime"></p>    
-            <p id="ratings"></p>      
-            <p id="plot"></p>    
+  <body>
+    <main class="level">
+      <div class="box has-background-warning">
+        <h2 class="title is-2">
+          Results
+        </h2>
+        <div class="">
+          <!-- using the text "filler" to check where the framework is at
+                Will need removal when close to MVP-->
+          <h3 class="title is-3" id="title">filler</h3>
+          <p id="year">filler</p>
+          <p id="rated">filler</p>
+          <p id="released">filler</p>
+          <p id="genre">filler</p>
+          <p id="director">filler</p>
+          <p id="runtime">filler</p>
+          <p id="ratings">filler</p>
+          <p id="plot">filler</p>
         </div>
-
-        <div>
-            <image id="gif1"></image>
-            <image id="gif2"></image>
-            <image id="gif3"></image>
-            <image id="gif4"></image>
-        </div>
+        <!-- -->
+        <aside class="level-right">
+          <div class="title is-3">Previous Searches</div>
+          <!-- use the div below to append LocalStoarge-->
+          <div class=""></div>
+        </aside>
+      </div>
+      <div>
+        <image class="" id="gif1"></image>
+        <image class="" id="gif2"></image>
+        <image class="" id="gif3"></image>
+        <image class="" id="gif4"></image>
+      </div>
     </main>
 
+    <!-- Possible search area? Moved search area into main section for Bulma -->
 
-<!-- Possible search area? -->
-    <aside>
-
-    </aside>
-
-
+    <!-- need "Go back" button-->
 
     <script src="./js/script.js"></script>
     <script src="./js/script2.js"></script>
-</body>
+  </body>
 </html>
