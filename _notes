@@ -1,0 +1,41 @@
+#Priorities to Accomplish
+--fully understand our git pulls and pushes
+--Setting up the Bones (html)
+--Navigatings the gif's api through for-loops or another method? 
+--Setting up movie api and getting relavant data 
+--Once Api paramaters are understood, make sure we can pull data relavant to the search
+
+
+
+
+#Neat things that we could add
+-- Movie posters displayed upon search? -- Cant do , need subscription to API
+-- Ratings select option ( g, pg, pg-13, R)
+-- Add Tv Shows and their ratings?
+-- possibly a random display of still gifs ( meme's?) in background of first page?
+-- 
+
+
+
+
+
+
+Who is doing what? what did you accomplish today or trying to accomplish?
+
+Claire--
+-- Writing basic javascript for the generic Functionality
+
+
+Kyle--
+--Will make sure to merge to develop branch, NOT the main branch
+--Getting a list of priorities together 
+--Reading documentation on Bulma CSS framework
+
+
+Maksim--
+-- grabbing API keys and understanding their paramaters
+
+
+Nathan--
+-- setting up the HTML and clarifing classes and Id's for the hooks 
+
