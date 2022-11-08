@@ -12,6 +12,7 @@ var searchNameEl = document.getElementById('TBD') // this is the text field on f
 var searchType = searchFilterEl.value;
 var searchWord = searchNameEl.value;
 
+// comment
 
 
 
