@@ -11,7 +11,7 @@ var movieDirectorEl = document.getElementById('director')
 var movieRuntimeEl = document.getElementById('runtime') 
 var movieRatingsEl = document.getElementById('ratings') 
 var moviePlotEl = document.getElementById('plot') 
-var goBackEl = document.getElementById('back-btn') // this is the back button
+var goBackEl = document.getElementById('back-button') // this is the back button
 
 var gifCollectionEl = document.querySelectorAll('img');
 
