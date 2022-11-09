@@ -100,8 +100,12 @@ function printGifs(gifs){
 }
 
 function displaySearchResultsLocStor(){
-  var namesList = localStorage.getItem("localStorage");
+  var namesList = localStorage.getItem("searchInput");
   var searchList = JSON.parse(namesList);
+
+  var namList = localStorage.getItem("mediaType");
+  var mediaList = JSON.parse(namList);
+
   for(var i=0; i < 6; i++) {
       // display search list
       var newLi = document.createElement("li");
@@ -109,7 +113,6 @@ function displaySearchResultsLocStor(){
       newBtn.classList.add("pastSearchBtn");
       searchedMoviesEl.append(newLi);
       newLi.append(newBtn);
-      newBtn.textContent = searchList[i];
+      newBtn.textContent = searchList[i] + " / " + mediaList[i];
   }
 }
-
