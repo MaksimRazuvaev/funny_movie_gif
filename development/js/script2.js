@@ -17,3 +17,10 @@ searchBtnEl.addEventListener("click", function (event){
 
 })
 
+// function to set search data to local storage
+
+function setLocalStorage(){
+
+
+}
+
