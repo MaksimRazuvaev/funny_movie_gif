@@ -106,13 +106,17 @@ function displaySearchResultsLocStor(){
   var namList = localStorage.getItem("mediaType");
   var mediaList = JSON.parse(namList);
 
-  for(var i=0; i < 6; i++) {
-      // display search list
-      var newLi = document.createElement("li");
-      var newBtn = document.createElement("button");
-      newBtn.classList.add("pastSearchBtn");
-      searchedMoviesEl.append(newLi);
-      newLi.append(newBtn);
-      newBtn.textContent = searchList[i] + " / " + mediaList[i];
+  for(var i=0; i < searchList.length; i++) {
+    if (i == 6){
+      i = searchList.length;
+    }else{
+    // display search list
+    var newLi = document.createElement("li");
+    var newBtn = document.createElement("button");
+    newBtn.classList.add("pastSearchBtn");
+    searchedMoviesEl.append(newLi);
+    newLi.append(newBtn);
+    newBtn.textContent = searchList[i] + " / " + mediaList[i];
+    }
   }
 }
