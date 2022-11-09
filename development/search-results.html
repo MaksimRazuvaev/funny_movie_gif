@@ -1,53 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Results | Movie and TV Gif Search</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/resultpage.css" />
-</head>
-
-<body>
-    
-    <main>
-        <h2>Results</h2>
-
-        <div>
-            <h3 id="title"></h3>
-            <p id="year"></p>
-            <p id="rated"></p>    
-            <p id="released"></p>    
-            <p id="genre"></p>    
-            <p id="director"></p>    
-            <p id="runtime"></p>    
-            <p id="ratings"></p>      
-            <p id="plot"></p>    
+  </head>
+  <body>
+    <div class="columns">
+      <div class="column is-three-quarters">
+        <p class="title is-2 box has-background-info">
+          Results | Movie and TV Gif Search
+        </p>
+        <div class="columns is-mobile">
+          <div class="column">
+            <!-- <p class="box is-info">First nested column</p> -->
+            <aside class="box is-flex-direction-column has-background-warning">
+              <!-- using the text "filler" to check where the framework is at. -->
+              <!-- Will need removal when close to MVP-->
+              <h3 class="block" id="title">Title filler</h3>
+              <!-- class="title is-3" -->
+              <p class="block" id="year">Year filler</p>
+              <p class="block" id="rated">Rated filler</p>
+              <p class="block" id="released">Release date filler</p>
+              <p class="block" id="genre">Genre filler</p>
+              <p class="block" id="director">Director filler</p>
+              <p class="block" id="runtime">Runtime filler</p>
+              <p class="block" id="ratings">Ratings filler</p>
+              <p class="block" id="plot">Plot filler</p>
+            </aside>
+          </div>
         </div>
-
-        <div>
-            <image id="gif1"></image>
-            <image id="gif2"></image>
-            <image id="gif3"></image>
-            <image id="gif4"></image>
+      </div>
+      <div class="column">
+        <p class="title is-3 box has-background-danger">Previous Searches</p>
+        <div class="columns is-mobile">
+          <div class="column">
+            <!-- <p class="box is-danger">50%</p> -->
+            <aside
+              class="box is-flex-direction-column has-background-primary ml-5"
+            >
+              <!-- <div class="title is-4">Previous Searches</div> -->
+              <ul>
+                <li class="block">:Searched query 1</li>
+                <li class="block">:Searched query 2</li>
+                <li class="block">:Searched query 3</li>
+                <li class="block">:Searched query 4</li>
+                <li class="block">:Searched query 5</li>
+                <li class="block">:Searched query 6</li>
+              </ul>
+            </aside>
+          </div>
         </div>
+      </div>
+    </div>
+    <div
+      class="columns has-background-warning mb-5 p-6 is-justify-content-space-evenly"
+    >
+      <image
+        class="column is-one-third m-2 has-background-info"
+        id="gif1"
+      ></image>
+      <image
+        class="column is-one-third m-2 has-background-danger"
+        id="gif2"
+      ></image>
+      <image
+        class="column is-one-third m-2 has-background-primary"
+        id="gif3"
+      ></image>
+    </div>
+    <div
+      class="columns has-background-warning p-6 is-justify-content-space-evenly"
+    >
+      <image
+        class="column is-one-third m-2 has-background-info"
+        id="gif4"
+      ></image>
+      <image
+        class="column is-one-third m-2 has-background-danger"
+        id="gif5"
+      ></image>
+      <image
+        class="column is-one-third m-2 has-background-primary"
+        id="gif6"
+      ></image>
+    </div>
+    <div class="columns is-centered">
+      <button id="back-button" class="column is-one-quarter button is-large is-danger">
+        Im the go back button
+      </button>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/script2.js"></script>
+  </body>
+</html>
+<!--************************************* ORIGINAL CODE SET UP *************************************-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results | Movie and TV Gif Search</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <main class="level">
+      <div class="box has-background-warning">
+        <h2 class="title is-2">
+          Results
+        </h2>
+        <div class="">
+          <h3 class="title is-3" id="title">filler</h3>
+          <p id="year">filler</p>
+          <p id="rated">filler</p>
+          <p id="released">filler</p>
+          <p id="genre">filler</p>
+          <p id="director">filler</p>
+          <p id="runtime">filler</p>
+          <p id="ratings">filler</p>
+          <p id="plot">filler</p>
+
+        </div>
+        <aside class="level-right">
+          <div class="title is-3">Previous Searches</div>
+          <div class=""></div>
+        </aside>
+      </div>
+      <div>
+        <image class="" id="gif1"></image>
+        <image class="" id="gif2"></image>
+        <image class="" id="gif3"></image>
+        <image class="" id="gif4"></image>
+      </div>
     </main>
     <button id="back-button">Go Back</button>
-
-<!-- Possible search area? -->
-    <aside>
-
-    </aside>
-
 
 
     <script src="./js/script.js"></script>
     <script src="./js/script2.js"></script>
-</body>
-</html>
+  </body>
+</html> -->
