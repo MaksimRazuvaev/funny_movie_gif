@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Results | Movie and TV Gif Search</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
@@ -19,45 +19,34 @@
   <body>
     <div class="columns">
       <div class="column is-three-quarters">
-        <p class="title is-2 box has-background-info">
+        <p class="title is-2 box has-background-warning">
           Results | Movie and TV Gif Search
         </p>
         <div class="columns is-mobile">
           <div class="column">
-            <!-- <p class="box is-info">First nested column</p> -->
             <aside class="box is-flex-direction-column has-background-warning">
-              <!-- using the text "filler" to check where the framework is at. -->
-              <!-- Will need removal when close to MVP-->
-              <h3 class="block" id="title">Title filler</h3>
-              <!-- class="title is-3" -->
-              <p class="block" id="year">Year filler</p>
-              <p class="block" id="rated">Rated filler</p>
-              <p class="block" id="released">Release date filler</p>
-              <p class="block" id="genre">Genre filler</p>
-              <p class="block" id="director">Director filler</p>
-              <p class="block" id="runtime">Runtime filler</p>
-              <p class="block" id="ratings">Ratings filler</p>
-              <p class="block" id="plot">Plot filler</p>
+              <h3 class="block" id="title"></h3>
+              <p class="block" id="year"></p>
+              <p class="block" id="rated"></p>
+              <p class="block" id="released"></p>
+              <p class="block" id="genre"></p>
+              <p class="block" id="director"></p>
+              <p class="block" id="runtime"></p>
+              <p class="block" id="ratings"></p>
+              <p class="block" id="plot"></p>
             </aside>
           </div>
         </div>
       </div>
       <div class="column">
-        <p class="title is-3 box has-background-danger">Previous Searches</p>
+        <p class="title is-3 box has-background-warning">Previous Searches</p>
         <div class="columns is-mobile">
           <div class="column">
-            <!-- <p class="box is-danger">50%</p> -->
             <aside
-              class="box is-flex-direction-column has-background-primary ml-5"
+              class="box is-flex-direction-column has-background-warning ml-5"
             >
-              <!-- <div class="title is-4">Previous Searches</div> -->
-              <ul>
-                <li class="block">:Searched query 1</li>
-                <li class="block">:Searched query 2</li>
-                <li class="block">:Searched query 3</li>
-                <li class="block">:Searched query 4</li>
-                <li class="block">:Searched query 5</li>
-                <li class="block">:Searched query 6</li>
+              <ul id="searchedMovies">
+
               </ul>
             </aside>
           </div>
@@ -72,11 +61,11 @@
         id="gif1"
       ></image>
       <image
-        class="column is-one-third m-2 has-background-danger"
+        class="column is-one-third m-2 has-background-info"
         id="gif2"
       ></image>
       <image
-        class="column is-one-third m-2 has-background-primary"
+        class="column is-one-third m-2 has-background-info"
         id="gif3"
       ></image>
     </div>
@@ -88,17 +77,17 @@
         id="gif4"
       ></image>
       <image
-        class="column is-one-third m-2 has-background-danger"
+        class="column is-one-third m-2 has-background-info"
         id="gif5"
       ></image>
       <image
-        class="column is-one-third m-2 has-background-primary"
+        class="column is-one-third m-2 has-background-info"
         id="gif6"
       ></image>
     </div>
     <div class="columns is-centered">
-        <button id="back-button" class="column is-one-quarter button is-large is-danger is-mobile">
-            Go Back
+      <button id="back-button" class="column is-one-quarter button is-large is-danger is-mobile">
+       Go Back
       </button>
     </div>
     <script src="./js/script.js"></script>
