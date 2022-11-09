@@ -19,7 +19,7 @@ function handleSearchFormSubmit() {
 
   searchOMBdApi(searchInputVal, mediaTypetVal);
   searchGIFApi(searchInputVal);
-  }
+}
 
   // request OMBdApi
   function searchOMBdApi(query, type) {
@@ -98,3 +98,18 @@ function printGifs(gifs){
     gifCollectionEl[i].setAttribute("src", gifs.data[i].images.fixed_height_small.url);
   }
 }
+
+function displaySearchResultsLocStor(){
+  var namesList = localStorage.getItem("localStorage");
+  var searchList = JSON.parse(namesList);
+  for(var i=0; i < 6; i++) {
+      // display search list
+      var newLi = document.createElement("li");
+      var newBtn = document.createElement("button");
+      newBtn.classList.add("pastSearchBtn");
+      searchedMoviesEl.append(newLi);
+      newLi.append(newBtn);
+      newBtn.textContent = searchList[i];
+  }
+}
+
