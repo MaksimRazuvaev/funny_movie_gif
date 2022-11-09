@@ -2,8 +2,9 @@
 // hooks to DOM
 var searchBtnEl = document.getElementById('btn'); 
 
-
-
+// variables to store the local storage
+let arrSearchInput = [];
+let arrMediaType = [];
 
 
 // event listeners
@@ -17,9 +18,15 @@ searchBtnEl.addEventListener("click", function (event){
 
 })
 
-// function to set search data to local storage
+// function to set search data to local storage arrays
 
-function setLocalStorage(){
+function setLocalStorage(searchInputVal, mediaTypetVal){
+
+    arrSearchInput.push(searchInputVal);
+    arrMediaType.push(mediaTypetVal);
+
+    localStorage.setItem("searchInput", JSON.stringify(arrSearchInput));
+    localStorage.setItem("mediaType", JSON.stringify(arrMediaType));
 
 
 }
