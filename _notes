@@ -1,15 +1,18 @@
 #Priorities to Accomplish
---fully understand our git pulls and pushes
---Setting up the Bones (html)
---Navigatings the gif's api through for-loops or another method? 
---Setting up movie api and getting relavant data 
+--fully understand our git pulls and pushes (done)
+--Setting up the Bones (html) (done)
+--Navigatings the gif's API and getting Gif's displayed
+--Setting up movie API and getting relavant data 
 --Once Api paramaters are understood, make sure we can pull data relavant to the search
+--Get localStorage set up and useable within the "Previous Searches" column
+--Double check all functionality/ appeal of application
+--Prepare a Presentation
 
 
 
 
 #Neat things that we could add
--- Movie posters displayed upon search? -- Cant do , need subscription to API
+-- Movie posters displayed upon search? -- Cant do , need subscription to the API we are using
 -- Ratings select option ( g, pg, pg-13, R)
 -- Add Tv Shows and their ratings?
 -- possibly a random display of still gifs ( meme's?) in background of first page?
@@ -24,19 +27,26 @@ Who is doing what? what did you accomplish today or trying to accomplish?
 
 Claire--
 -- Writing basic javascript for the generic Functionality
-
+-- writing the localStorage set Items
+-- fixing up eventListeners for the buttons
+-- Getting elements bridged from HTML to JS 
 
 Kyle--
 --Will make sure to merge to develop branch, NOT the main branch
 --Getting a list of priorities together 
 --Reading documentation on Bulma CSS framework
 --began structuring 1st html page, attempting to center all items in main viewport
+--Finished appling Framework to 1st and 2nd html pages. 
+--Reviewing work and making minor updates and changes to make the page more appealing
 
 
 Maksim--
 -- grabbing API keys and understanding their paramaters
+-- writing the localStorage get items and passing them into buttons for previous searches column
+-- Gathering API data and setting up functionality of the API's to work with the application
 
 
 Nathan--
 -- setting up the HTML and clarifing classes and Id's for the hooks 
 -- checking out Bulma Documentation for pair programming with Kyle
+-- assiting kyle in understanding more of Bulma's framework and appling changes where needed for better visual appeal.
