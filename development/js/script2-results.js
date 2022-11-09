@@ -12,8 +12,26 @@ var searchedMoviesEl = document.getElementById('searchedMovies')
 
 var gifCollectionEl = document.querySelectorAll('img');
 
+// event listener to return to search page
 goBackEl.addEventListener("click", function (event){
     // display the main search html page 
     window.location = 'index.html' 
 
+})
+
+// event listener to view past search results
+
+searchedMoviesEl.addEventListener("click", function(event){
+    var element = event.target;
+    if (element.matches(".pastSearchBtn")) {
+var searchResults= element.textcontent.split('/');
+var searchName = searchResults[0];
+var searchType = searchResults[1];
+
+searchOMBdApi(searchName, searchType);
+searchGIFApi(searchName);
+
+
+
+    }        
 })
