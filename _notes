@@ -8,7 +8,17 @@
 --Double check all functionality/ appeal of application
 --Prepare a Presentation
 
+Thursday 11/10/2022 Priorites
+Claire and Maksim \/
+-- get search button functional on first HTML page
+-- get data to push into the 2nd HTMl page upon user search from first HTML page
+-- get gif's to display on 2nd HTMl page
+-- Make sure local Storage is usable
 
+Kyle and Nathan \/ 
+-- see if we cant "pretty up the page more"
+-- Add nicer borders to the elements?
+-- get fonts figured out
 
 
 #Neat things that we could add
@@ -17,11 +27,6 @@
 -- Add Tv Shows and their ratings?
 -- possibly a random display of still gifs ( meme's?) in background of first page?
 -- 
-
-
-
-
-
 
 Who is doing what? what did you accomplish today or trying to accomplish?
 
@@ -36,7 +41,7 @@ Kyle--
 --Getting a list of priorities together 
 --Reading documentation on Bulma CSS framework
 --began structuring 1st html page, attempting to center all items in main viewport
---Finished appling Framework to 1st and 2nd html pages. 
+--Finished appling main Framework to 1st and 2nd html pages. 
 --Reviewing work and making minor updates and changes to make the page more appealing
 
 
