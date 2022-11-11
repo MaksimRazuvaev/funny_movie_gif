@@ -1,0 +1,21 @@
+html {
+  background-color: rgb(47, 144, 223);
+}
+
+.marginSetter {
+  margin-top: 22rem;
+  margin-bottom: 15rem;
+}
+
+h1 {
+  border: solid 5px white;
+  text-align: center;
+}
+
+option {
+  font-size: 20px;
+}
+
+form {
+  border: solid 5px white;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results | Movie and TV Gif Search</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/resultpage.css" />
+  </head>
+  <body>
+    <div class="columns">
+      <div class="column is-three-quarters">
+        <p class="title is-2 box has-background-warning mt-3 mx-3">
+          Results | Movie and TV Gif Search
+        </p>
+        <div class="columns is-mobile">
+          <div class="column">
+            <aside class="box is-flex-direction-column has-background-warning mx-3">
+              <h3 class="block" id="title"></h3>
+              <p class="block" id="year"></p>
+              <p class="block" id="rated"></p>
+              <p class="block" id="released"></p>
+              <p class="block" id="genre"></p>
+              <p class="block" id="director"></p>
+              <p class="block" id="runtime"></p>
+              <p class="block" id="ratings"></p>
+              <p class="block" id="plot"></p>
+            </aside>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <p class="title is-3 box has-background-warning mt-3 mx-3 noWrap">Previous Searches</p>
+        <div class="columns is-mobile">
+          <div class="column">
+            <aside
+              class="box is-flex-direction-column has-background-warning mx-3"
+            >
+              <ul id="searchedMovies">
+
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="columns box has-background-warning mb-5 p-6 is-justify-content-space-evenly mx-3"
+    >
+      <image
+        class="column is-half m-2 has-background-info"
+        id="gif1"
+      ></image>
+      <image
+        class="column is-half m-2 has-background-info"
+        id="gif2"
+      ></image>
+    </div>
+    <div
+      class="columns box has-background-warning p-6 is-justify-content-space-evenly mx-3"
+    >
+      <image
+        class="column is-half m-2 has-background-info"
+        id="gif3"
+      ></image>
+      <image
+        class="column is-half m-2 has-background-info"
+        id="gif4"
+      ></image>
+    </div>
+    <div class="columns is-centered is-mobile">
+      <button id="back-button" class="column is-one-quarter button is-large is-danger is-mobile mt-4">
+       Go Back
+      </button>
+    </div>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script2-results.js"></script>
+    <script src="./assets/js/search_script.js"></script>
+  </body>
+</html>
+<!--************************************* ORIGINAL CODE SET UP *************************************-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results | Movie and TV Gif Search</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <main class="level">
+      <div class="box has-background-warning">
+        <h2 class="title is-2">
+          Results
+        </h2>
+        <div class="">
+          <h3 class="title is-3" id="title">filler</h3>
+          <p id="year">filler</p>
+          <p id="rated">filler</p>
+          <p id="released">filler</p>
+          <p id="genre">filler</p>
+          <p id="director">filler</p>
+          <p id="runtime">filler</p>
+          <p id="ratings">filler</p>
+          <p id="plot">filler</p>
+
+        </div>
+        <aside class="level-right">
+          <div class="title is-3">Previous Searches</div>
+          <div class=""></div>
+        </aside>
+      </div>
+      <div>
+        <image class="" id="gif1"></image>
+        <image class="" id="gif2"></image>
+        <image class="" id="gif3"></image>
+        <image class="" id="gif4"></image>
+      </div>
+    </main>
+    <button id="back-button">Go Back</button>
+
+
+    <script src="./js/script.js"></script>
+    <script src="./js/script2.js"></script>
+  </body>
+</html> -->
