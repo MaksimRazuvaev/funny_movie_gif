@@ -9,7 +9,7 @@ html {
 
 h1 {
   text-align: center;
-  font-family: 'Fredoka One', cursive;;
+  font-family: 'Fredoka One', cursive;
   font-weight: 400;
 }
 
@@ -25,3 +25,10 @@ option {
   word-break: keep-all;
 }
 
+#results-title {
+  font-family: 'Fredoka One', cursive;
+}
+
+#previous-title {
+  font-family: 'Fredoka One', cursive;
+}
