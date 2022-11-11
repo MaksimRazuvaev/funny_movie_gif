@@ -20,3 +20,8 @@ option {
 .wBorder {
   border: ridge 5px white;
 }
+
+.noWrap {
+  word-break: keep-all;
+}
+
