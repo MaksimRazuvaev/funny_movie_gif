@@ -8,7 +8,9 @@ function handleSearchFormSubmit() {
 
   var searchParamsArr = document.location.search.split('&');
 
-  // console.log("this is searchParamsArr  " + searchParamsArr);
+
+  console.log("this is searchParamsArr  " + searchParamsArr);
+
 
   // Get the input and media type values
   var searchInputVal = searchParamsArr[0].split('=').pop();
