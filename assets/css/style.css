@@ -8,7 +8,6 @@ html {
 }
 
 h1 {
-  border: solid 5px white;
   text-align: center;
 }
 
@@ -16,6 +15,6 @@ option {
   font-size: 20px;
 }
 
-form {
-  border: solid 5px white;
+.wBorder {
+  border: ridge 5px white;
 }
