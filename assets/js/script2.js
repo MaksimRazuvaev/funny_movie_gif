@@ -11,9 +11,10 @@ let arrMediaType = [];
 
 searchBtnEl.addEventListener("click", function (event){
     event.preventDefault();
-    handleSearchFormSubmit();
+    console.log("hit script2")
+    getSearchRequest(event);
     // display the search results html page 
-    window.location = 'search-results.html' // whatever this html is is
+    //window.location = 'search-results.html' // whatever this html is is
     console.log('searched')
 
 })

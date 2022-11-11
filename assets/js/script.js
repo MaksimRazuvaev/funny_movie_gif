@@ -14,7 +14,11 @@ function handleSearchFormSubmit() {
 
   // Get the input and media type values
   var searchInputVal = searchParamsArr[0].split('=').pop();
+  console.log("this is search input value  " + searchInputVal);  
+  
   var mediaTypetVal = searchParamsArr[1].split('=').pop();
+
+  console.log("this is search media value  " + mediaTypetVal);  
 
   // console.log("this is query  " + searchInputVal);
   // console.log("this is format  " + mediaTypetVal);
@@ -122,3 +126,5 @@ function displaySearchResultsLocStor(){
     }
   }
 }
+
+handleSearchFormSubmit();
