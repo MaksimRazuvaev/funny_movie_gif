@@ -3,12 +3,14 @@ html {
 }
 
 .marginSetter {
-  margin-top: 22rem;
+  margin-top: 20rem;
   margin-bottom: 15rem;
 }
 
 h1 {
   text-align: center;
+  font-family: 'Fredoka One', cursive;;
+  font-weight: 400;
 }
 
 option {
