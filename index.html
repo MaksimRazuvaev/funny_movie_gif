@@ -24,13 +24,11 @@
       rel="stylesheet"
     />
 
-
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
   <body class="marginSetter">
     <main>
-
       <div class="box has-background-info mx-6">
         <h1 class="title box has-background-warning wBorder">
           Gif Me That Movie & TV Info
@@ -41,21 +39,25 @@
             id="search-form"
           >
             <input
-              class="column is-5 content is-medium mr-3"
+              class="input is-rounded is-medium mr-3"
               id="search-input"
               placeholder="Enter a Movie Title or TV Show Here!"
-
             />
-            <select class="column is-5 content is-medium mr-2" id="media-input">
-              <option value="" disabled selected>Select media format...</option>
-              <option value="movies">Movies</option>
-              <option value="series">TV Shows</option>
-            </select>
+            <div>
+              <div class="select is-rounded is-medium mr-3">
+                <select id="media-input">
+                  <option value="" disabled selected>
+                    Select media format...
+                  </option>
+                  <option value="movies">Movies</option>
+                  <option value="series">TV Shows</option>
+                </select>
+              </div>
+            </div>
 
             <button id="btn" class="column is-2 button is-info is-medium">
               Search
             </button>
-
           </form>
         </div>
       </div>
@@ -64,8 +66,5 @@
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/script2.js"></script>
     <script src="./assets/js/search_script.js"></script>
-
-
   </body>
-
 </html>
