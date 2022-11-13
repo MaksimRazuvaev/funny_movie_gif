@@ -24,38 +24,40 @@
       rel="stylesheet"
     />
 
-
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
   <body class="marginSetter">
     <main>
-
       <div class="box has-background-info mx-6">
-        <h1 class="title box has-background-warning">
+        <h1 class="title box has-background-warning wBorder">
           Gif Me That Movie & TV Info
         </h1>
         <div class="block has-background-info">
           <form
-            class="columns box has-background-warning is-mobile"
+            class="columns box has-background-warning is-mobile wBorder"
             id="search-form"
           >
             <input
-              class="column is-5 content is-medium"
+              class="input is-rounded is-medium is-link mr-3"
               id="search-input"
               placeholder="Enter a Movie Title or TV Show Here!"
-
             />
-            <select class="column is-5 content is-medium mr-3" id="media-input">
-              <option value="" disabled selected>Select media format...</option>
-              <option value="movie">Movies</option>
-              <option value="series">TV Shows</option>
-            </select>
+            <div>
+              <div class="select is-rounded is-medium is-link mr-3">
+                <select id="media-input">
+                  <option value="" disabled selected>
+                    Select media format...
+                  </option>
+                  <option value="movie">Movies</option>
+                  <option value="series">TV Shows</option>
+                </select>
+              </div>
+            </div>
 
-            <button id="btn" type='submit' class="column is-2 button is-info is-medium">
+            <button id="btn" class="button is-link is-medium is-rounded">
               Search
             </button>
-
           </form>
         </div>
       </div>
@@ -64,8 +66,5 @@
      <script src="./assets/js/script.js"></script>
     <script src="./assets/js/script2.js"></script>
     <script src="./assets/js/search_script.js"></script>
-
-
   </body>
-
 </html>
