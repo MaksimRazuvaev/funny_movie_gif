@@ -3,21 +3,21 @@
 var searchBtnEl = document.getElementById('btn'); 
 
 // variables to store the local storage
-let arrSearchInput = [];
-let arrMediaType = [];
+var arrSearchInput = [];
+var arrMediaType = [];
 
 
 // event listeners
 
-searchBtnEl.addEventListener("click", function (event){
-    event.preventDefault();
-    console.log("hit script2")
-    getSearchRequest(event);
-    // display the search results html page 
-    //window.location = 'search-results.html' // whatever this html is is
-    console.log('searched')
+// searchBtnEl.addEventListener("click", function (event){
+//     event.preventDefault();
+//     console.log("hit script2")
+//     getSearchRequest(event);
+//     // display the search results html page 
+//     //window.location = 'search-results.html' // whatever this html is is
+//     console.log('searched')
 
-})
+// })
 
 // function to set search data to local storage arrays
 

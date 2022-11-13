@@ -3,7 +3,7 @@ var searchFormEl = document.querySelector('#search-form');
 
 
 function getSearchRequest(event) {
-  // event.preventDefault();
+  event.preventDefault();
 
   var userInputVal = document.querySelector('#search-input').value;
   var mediaInputVal = document.querySelector('#media-input').value;
@@ -21,16 +21,13 @@ function getSearchRequest(event) {
   var queryString = './search-results.html?t=' + userInputVal + '&type=' + mediaInputVal;
 
 
-  console.log(queryString);
+  console.log("query string ", queryString);
 
-  //window.location = queryString; // whatever this html is is
+ location.assign(queryString);
 
-
-  location.assign(queryString);
-
-  //savetolocalstorage(userInputVal, formatInputVal)
+ setLocalStorage(userInputVal, mediaInputVal);
 }
 
 
-// searchFormEl.addEventListener('submit', getSearchRequest);
+searchFormEl.addEventListener('submit', getSearchRequest);
 
