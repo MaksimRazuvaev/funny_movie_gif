@@ -31,7 +31,7 @@ https://developers.giphy.com/ .
 We also made use of the Bulma CSS Framework. It was a small learning curve in comparison to BootStrap, but in the end had very similar functionality, just different Syntax. 
 
 ## Screenshot of working application and URL link
-![ScreenShot of Deplyed Application](/)
+![ScreenShot of Deployed Application](/)
 
 Deployed Website Link [Click Here!](https://maksimrazuvaev.github.io/funny_movie_gif/)
 
