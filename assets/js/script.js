@@ -10,6 +10,7 @@ function handleSearchFormSubmit() {
 
   searchOMBdApi(searchInputVal, mediaTypetVal);
   searchGIFApi(searchInputVal);
+
 }
 
   // request OMBdApi
@@ -41,6 +42,7 @@ function handleSearchFormSubmit() {
       .catch(function (error) {
         console.error(error);
       });
+
   }
 
 // request GIFs
@@ -94,12 +96,13 @@ function displaySearchResultsLocStor(){
   var searchList = [];
   var namesList = localStorage.getItem("searchInput");
   searchList = JSON.parse(namesList);
+  console.log(searchList)
 
   var namList = localStorage.getItem("mediaType");
   var mediaList = JSON.parse(namList);
 
   // display past search for 6 elements
-  for(var i=searchList.length-1; i > 0; i--) {
+  for(var i=searchList.length-1; i >= 0; i--) {
     var count = 0;
     if (count == 6){
       return;
@@ -112,6 +115,8 @@ function displaySearchResultsLocStor(){
     searchedMoviesEl.append(newLi);
     newLi.append(newBtn);
     newBtn.textContent = searchList[i] + " / " + mediaList[i];
+    console.log(searchList[i])
+    console.log(i)
     count++;
     }
   }
