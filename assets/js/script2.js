@@ -36,6 +36,7 @@ function setLocalStorage(searchInputVal, mediaTypetVal){
     
         localStorage.setItem("searchInput", JSON.stringify(arrSearchInput));
         localStorage.setItem("mediaType", JSON.stringify(arrMediaType));
+
     }else{
         var arrSearchInput = [];
         var arrMediaType = [];
