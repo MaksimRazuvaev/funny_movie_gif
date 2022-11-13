@@ -1,23 +1,13 @@
 
-
-
-
-
 // get user input from search form
 function handleSearchFormSubmit() {
 
   var searchParamsArr = document.location.search.split('&');
 
-
-  console.log("this is searchParamsArr  " + searchParamsArr);
-
-
   // Get the input and media type values
   var searchInputVal = searchParamsArr[0].split('=').pop();
+  
   var mediaTypetVal = searchParamsArr[1].split('=').pop();
-
-  // console.log("this is query  " + searchInputVal);
-  // console.log("this is format  " + mediaTypetVal);
 
   searchOMBdApi(searchInputVal, mediaTypetVal);
   searchGIFApi(searchInputVal);
@@ -26,13 +16,17 @@ function handleSearchFormSubmit() {
   // request OMBdApi
   function searchOMBdApi(query, type) {
     var oMBdAPI = "http://www.omdbapi.com/?i=tt3896198&apikey=f90595f6";
-  
+
     oMBdAPI = oMBdAPI + '&t=' + query;
+    
+    console.log(oMBdAPI);
 
     if (type) {
       oMBdAPI = oMBdAPI + '&type=' + type;
     }
-  
+
+    console.log(oMBdAPI);
+
     fetch(oMBdAPI)
       .then(function (response) {
         if (!response.ok) {
@@ -43,7 +37,7 @@ function handleSearchFormSubmit() {
       })
       .then(function (oMBdreply) {
 
-        if (!oMBdreply.title) {
+        if (!oMBdreply.Title) {
           console.log('No results found!');
         } else {
             printResults(oMBdreply);
@@ -56,9 +50,12 @@ function handleSearchFormSubmit() {
 
 // request GIFs
 function searchGIFApi(query) {
+
   var gifyAPIKey = 'https://api.giphy.com/v1/gifs/search?api_key=6mOQAyZsL07sX4D85ogu42AL0qo2p0Hh&limit=4&rating=g&lang=en&';
 
-  gifyAPIKey = gifyAPIKey + '&tag=' + query;
+  gifyAPIKey = gifyAPIKey + 'q=' + query;
+
+  console.log(gifyAPIKey);
 
   fetch(gifyAPIKey)
     .then(function (response) {
@@ -69,6 +66,8 @@ function searchGIFApi(query) {
       return response.json();
     })
     .then(function (gifyReply) {
+
+      console.log("reply", gifyReply.data);
 
       if (!gifyReply.data) {
         console.log('No results found!');
@@ -83,15 +82,15 @@ function searchGIFApi(query) {
 
 // function to print result for oMBD
 function printResults(oMBdreply){
-  movieTitleEl.innerHTML = oMBdreply.title;
-  movieYearEl.innerHTML = oMBdreply.year;
-  movieRatedEl.innerHTML = oMBdreply.rated;
-  movieReleasedEl.innerHTML = oMBdreply.released;
-  movieGenreEl.innerHTML = oMBdreply.genre;
-  movieDirectorEl.innerHTML = oMBdreply.director;
-  movieRuntimeEl.innerHTML = oMBdreply.runtime;
-  movieRatingsEl.innerHTML = oMBdreply.ratings;
-  moviePlotEl.innerHTML = oMBdreply.plot;
+  movieTitleEl.innerHTML = "Title: " + oMBdreply.Title;
+  movieYearEl.innerHTML = "Year: " + oMBdreply.Year;
+  movieRatedEl.innerHTML = "Rated:" + oMBdreply.Rated;
+  movieReleasedEl.innerHTML = "Released: " + oMBdreply.Released;
+  movieGenreEl.innerHTML = "Genre: " + oMBdreply.Genre;
+  movieDirectorEl.innerHTML = "Director: " + oMBdreply.Director;
+  movieRuntimeEl.innerHTML = "Runtime: " + oMBdreply.Runtime;
+  movieRatingsEl.innerHTML = "Rating: " + oMBdreply.Ratings[1].Value + " Source: " + oMBdreply.Ratings[1].Source;
+  moviePlotEl.innerHTML = "Plot: " + oMBdreply.Plot;
 }
 
 // function to print gifs
@@ -102,8 +101,12 @@ function printGifs(gifs){
 }
 
 function displaySearchResultsLocStor(){
+  var searchList = [];
   var namesList = localStorage.getItem("searchInput");
-  var searchList = JSON.parse(namesList);
+  searchList = JSON.parse(namesList);
+
+  console.log("this is search input " + searchList);
+  console.log(searchList.length);
 
   var namList = localStorage.getItem("mediaType");
   var mediaList = JSON.parse(namList);
@@ -113,6 +116,7 @@ function displaySearchResultsLocStor(){
       i = searchList.length;
     }else{
     // display search list
+    var searchedMoviesEl = document.getElementById('searchedMovies');
     var newLi = document.createElement("li");
     var newBtn = document.createElement("button");
     newBtn.classList.add("localStorageBtns"); // changed pastSearchButton class parameter to localStorageBtns parameter class for styling additions. 
@@ -122,3 +126,7 @@ function displaySearchResultsLocStor(){
     }
   }
 }
+
+handleSearchFormSubmit();
+displaySearchResultsLocStor();
+setLocalStorage(searchInputVal, mediaTypetVal);

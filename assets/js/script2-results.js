@@ -23,15 +23,18 @@ goBackEl.addEventListener("click", function (event){
 
 searchedMoviesEl.addEventListener("click", function(event){
     var element = event.target;
+    console.log("Past search button is clicked");
     if (element.matches(".pastSearchBtn")) {
-var searchResults= element.textcontent.split('/');
+var searchResults= element.textContent.split('/');
+console.log("what is in search result" + searchResults);
+
 var searchName = searchResults[0];
+console.log("what is in search name" + searchName);
 var searchType = searchResults[1];
+console.log("what is in search type" + searchType);
+
 
 searchOMBdApi(searchName, searchType);
 searchGIFApi(searchName);
-
-
-
     }        
-})
+});

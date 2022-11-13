@@ -2,10 +2,10 @@
 var searchFormEl = document.querySelector('#search-form');
 
 
-function getSearchReques(event) {
+function getSearchRequest(event) {
   event.preventDefault();
 
-  var userInputVal = document.querySelector('#search-form').value;
+  var userInputVal = document.querySelector('#search-input').value;
   var mediaInputVal = document.querySelector('#media-input').value;
 
 
@@ -21,15 +21,14 @@ function getSearchReques(event) {
   var queryString = './search-results.html?t=' + userInputVal + '&type=' + mediaInputVal;
 
 
-  console.log(queryString);
+  console.log("query string ", queryString);
 
+ location.assign(queryString);
 
-  location.assign(queryString);
+ setLocalStorage(userInputVal, mediaInputVal);
 
-  //savetolocalstorage(userInputVal, formatInputVal)
 }
 
 
-searchFormEl.addEventListener('search', getSearchReques);
-console.log("submit button is clicked");
+searchFormEl.addEventListener('submit', getSearchRequest);
 
