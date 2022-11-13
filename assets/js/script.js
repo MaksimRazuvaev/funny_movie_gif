@@ -15,7 +15,7 @@ function handleSearchFormSubmit() {
 
   // request OMBdApi
   function searchOMBdApi(query, type) {
-    var oMBdAPI = "http://www.omdbapi.com/?i=tt3896198&apikey=f90595f6";
+    var oMBdAPI = "https://www.omdbapi.com/?i=tt3896198&apikey=f90595f6";
 
     oMBdAPI = oMBdAPI + '&t=' + query;
 
