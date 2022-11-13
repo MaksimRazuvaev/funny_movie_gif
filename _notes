@@ -1,40 +1,100 @@
 #Priorities to Accomplish
---fully understand our git pulls and pushes
---Setting up the Bones (html)
---Navigatings the gif's api through for-loops or another method? 
---Setting up movie api and getting relavant data 
+--fully understand our git pulls and pushes (done)
+--Setting up the Bones (html) (done)
+--Navigatings the gif's API and getting Gif's displayed
+--Setting up movie API and getting relavant data 
 --Once Api paramaters are understood, make sure we can pull data relavant to the search
+--Get localStorage set up and useable within the "Previous Searches" column
+--Double check all functionality/ appeal of application
+--Prepare a Presentation
 
+Thursday 11/10/2022 Priorites
+Claire and Maksim \/
+-- get search button functional on first HTML page
+-- get data to push into the 2nd HTMl page upon user search from first HTML page
+-- get gif's to display on 2nd HTMl page
+-- Make sure local Storage is usable
 
+Kyle and Nathan \/ 
+-- see if we cant "pretty up the page more"
+-- Add nicer borders to the elements?
+-- get fonts figured out
 
 
 #Neat things that we could add
--- Movie posters displayed upon search? -- Cant do , need subscription to API
+-- Movie posters displayed upon search? -- Cant do , need subscription to the API we are using
 -- Ratings select option ( g, pg, pg-13, R)
 -- Add Tv Shows and their ratings?
 -- possibly a random display of still gifs ( meme's?) in background of first page?
 -- 
 
-
-
-
-
-
 Who is doing what? what did you accomplish today or trying to accomplish?
 
 Claire--
 -- Writing basic javascript for the generic Functionality
-
+-- writing the localStorage set Items
+-- fixing up eventListeners for the buttons
+-- Getting elements bridged from HTML to JS 
 
 Kyle--
+--Will make sure to merge to develop branch, NOT the main branch
 --Getting a list of priorities together 
 --Reading documentation on Bulma CSS framework
+--began structuring 1st html page, attempting to center all items in main viewport
+--Finished appling main Framework to 1st and 2nd html pages. 
+--Reviewing work and making minor updates and changes to make the page more appealing
 
 
 Maksim--
 -- grabbing API keys and understanding their paramaters
+-- writing the localStorage get items and passing them into buttons for previous searches column
+-- Gathering API data and setting up functionality of the API's to work with the application
 
 
 Nathan--
 -- setting up the HTML and clarifing classes and Id's for the hooks 
+-- checking out Bulma Documentation for pair programming with Kyle
+-- assiting kyle in understanding more of Bulma's framework and appling changes where needed for better visual appeal.
+
+
+Presentation Notes:
+
+# Elevator pitch 
+-We should talk about how annoyingly long it took us to come up with a useable combination of API's and how we came to the conclusion of what we were doing. Make sure we make mention of the fact that we wanted to bring some homur/comical elements to a movie review, in our own way using gif's.
+
+"Hello, We are the CPD group ( explain abbreviation if you like), And we created a funny little Movie and Tv show ratings application that throws in some related Gif's to the movie or TV Show in question. We wanted to apply a bit more humor to the sometimes boring or over-critqued reviews that we encounter when looking up movies or TV shows. This Application will pick 4 Gif's related to the movie or TV show in question from the Giphy's API data and display 4 different Gif's at a time, along with some details about the movie/TV show. The details include the Rating of the Movie / Tv show, their runtime, the year it came out, and more!.
+
+
+# Concept
+-Description = pretty much coved by elevator pitch. not much else to explain to the class
+
+- Motivation
+"Our Motiviation was pretty straight forward. Make the reviews of the Movie /TV shows more fun / funny! There's too many critiques availible to the consumer that are kind-of harsh or are just boring to read. We felt that if there was a comical element added, they may not seem so dredging to look over."
+
+- User Story 
+--AS A content consumer with a sense of humor,
+--I WANT to find information about movies or tv shows along with relevant gifs
+--SO THAT I can be entertained while I look for movie information and get a GIF relating to the movie in question.
+
+# Process 
+-Technologies used
+--"We ended up using the OMDb API to gather moive and TV show data, and the Giphy API to gather Gif's. Kyle Decided on using Bulma CSS framework for the large majority of application styling"
+
+-Breakdown of Roles ( we can each Speak seperately about what we assigned ourselves to do, or have one person explain all of this)
+--"Our breakdown of roles came from a starting point of 'whom was comfortable at doing what' and thus, Kyle was assigned Project Lead and Finding a framework that would fulfill our Styling and Mock-ups, Maksim took on the mantle of API data gathering and its usage within our application, Claire took the challenge of bridging elements from HTML to our JavaScript, And Nathan was tackling our main structure of the HTML. "
+
+-Challenges
+-- Working in teams was a different challenge
+-- Finding something to do while someone finishes their code and merges it
+-- Understanding each others method of coding and View of the project
+
+"Working in a team was both a Challenge and relief. While we all have previously worked alone on various projects, coming together and understanding each others locic was bit confusing at first, but eventually we got a handle on all of that. Another minor challenge we faced was patience. It was rather difficult to get farther on a task you were assigned while other team members were still finishing up their lines of code. We all had minor differences on how we imangined the finished application would look like and how it would work, but we pooled our ideas together and picked out the most efficent uses, while taking on some challenges of our own design. "
+
+-Successes
+-- IT WORKS! 
+"Every time we pushed to Github and DIDNT have a merge conflict felt like a minor victory to us. We definitely had a few of them ( Kyle mostly ). "
+
+
+# Directions for Future Development
+-- "We Would have liked to added a random grid of gif's for the background of the first HTML page, and maybe more refined Gif production for user's query."
 
