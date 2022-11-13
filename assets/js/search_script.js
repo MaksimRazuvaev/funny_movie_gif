@@ -16,7 +16,6 @@ function getSearchRequest(event) {
  location.assign(queryString);
 
  setLocalStorage(userInputVal, mediaInputVal);
- console.log("local storage is set");
 }
 
 searchFormEl.addEventListener('submit', getSearchRequest);

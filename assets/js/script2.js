@@ -2,7 +2,6 @@
 var searchBtnEl = document.getElementById('btn'); 
 
 // function to set search data to local storage arrays
-
 function setLocalStorage(searchInputVal, mediaTypetVal){
 
     if(localStorage.hasOwnProperty("searchInput")) {
