@@ -1,4 +1,3 @@
-
 // get user input from search form
 function handleSearchFormSubmit() {
 
@@ -18,14 +17,10 @@ function handleSearchFormSubmit() {
     var oMBdAPI = "http://www.omdbapi.com/?i=tt3896198&apikey=f90595f6";
 
     oMBdAPI = oMBdAPI + '&t=' + query;
-    
-    console.log(oMBdAPI);
 
     if (type) {
       oMBdAPI = oMBdAPI + '&type=' + type;
     }
-
-    console.log(oMBdAPI);
 
     fetch(oMBdAPI)
       .then(function (response) {
@@ -55,19 +50,14 @@ function searchGIFApi(query) {
 
   gifyAPIKey = gifyAPIKey + 'q=' + query;
 
-  console.log(gifyAPIKey);
-
   fetch(gifyAPIKey)
     .then(function (response) {
       if (!response.ok) {
         throw response.json();
       }
-
       return response.json();
     })
     .then(function (gifyReply) {
-
-      console.log("reply", gifyReply.data);
 
       if (!gifyReply.data) {
         console.log('No results found!');
@@ -105,28 +95,31 @@ function displaySearchResultsLocStor(){
   var namesList = localStorage.getItem("searchInput");
   searchList = JSON.parse(namesList);
 
-  console.log("this is search input " + searchList);
-  console.log(searchList.length);
-
   var namList = localStorage.getItem("mediaType");
   var mediaList = JSON.parse(namList);
 
-  for(var i=0; i < searchList.length; i++) {
-    if (i == 6){
-      i = searchList.length;
+  // remove elements before display
+  // var getliElmt = document.querySelector("li");
+  // console.log(getliElmt.length);
+
+  // display past search for 6 elements
+  for(var i=searchList.length-1; i > 0; i--) {
+    var count = 0;
+    if (count == 6){
+      return;
     }else{
     // display search list
-    var searchedMoviesEl = document.getElementById('searchedMovies');
+    var searchedMoviesEl = document.getElementById('searchedMovies')
     var newLi = document.createElement("li");
     var newBtn = document.createElement("button");
-    newBtn.classList.add("localStorageBtns"); // changed pastSearchButton class parameter to localStorageBtns parameter class for styling additions. 
+    newBtn.classList.add("pastSearchBtn");
     searchedMoviesEl.append(newLi);
     newLi.append(newBtn);
     newBtn.textContent = searchList[i] + " / " + mediaList[i];
+    count++;
     }
   }
 }
 
 handleSearchFormSubmit();
 displaySearchResultsLocStor();
-setLocalStorage(searchInputVal, mediaTypetVal);
