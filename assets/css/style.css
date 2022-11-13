@@ -36,3 +36,8 @@ option {
 #back-button {
   font-family: 'Fredoka One', cursive;
 }
+
+.localStorageBtns {
+  background-color: blue;
+  color: beige;
+}
