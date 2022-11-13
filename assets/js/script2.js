@@ -3,8 +3,8 @@
 var searchBtnEl = document.getElementById('btn'); 
 
 // variables to store the local storage
-var arrSearchInput = [];
-var arrMediaType = [];
+// var arrSearchInput = [];
+// var arrMediaType = [];
 
 // localStorage.setItem("searchInput", JSON.stringify(arrSearchInput));
 // localStorage.setItem("mediaType", JSON.stringify(arrMediaType));
@@ -24,16 +24,31 @@ var arrMediaType = [];
 
 function setLocalStorage(searchInputVal, mediaTypetVal){
 
-    var namesList = localStorage.getItem("searchInput");
-    var arrSearchInput = JSON.parse(namesList);
+    if(localStorage.hasOwnProperty("searchInput")) {
+        var namesList = localStorage.getItem("searchInput");
+        var arrSearchInput = JSON.parse(namesList);
 
-    var namesList = localStorage.getItem("mediaType");
-    var arrMediaType = JSON.parse(namesList);
+        var namesList = localStorage.getItem("mediaType");
+        var arrMediaType = JSON.parse(namesList);
 
-    arrSearchInput.push(searchInputVal);
-    arrMediaType.push(mediaTypetVal);
+        arrSearchInput.push(searchInputVal);
+        arrMediaType.push(mediaTypetVal);
+    
+        localStorage.setItem("searchInput", JSON.stringify(arrSearchInput));
+        localStorage.setItem("mediaType", JSON.stringify(arrMediaType));
+    }else{
+        var arrSearchInput = [];
+        var arrMediaType = [];
 
-    localStorage.setItem("searchInput", JSON.stringify(arrSearchInput));
-    localStorage.setItem("mediaType", JSON.stringify(arrMediaType));
+        arrSearchInput.push(searchInputVal);
+        arrMediaType.push(mediaTypetVal);
+    
+        localStorage.setItem("searchInput", JSON.stringify(arrSearchInput));
+        localStorage.setItem("mediaType", JSON.stringify(arrMediaType));
+    }
+
+
+
+
+
 }
-

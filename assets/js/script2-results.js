@@ -16,25 +16,19 @@ var gifCollectionEl = document.querySelectorAll('img');
 goBackEl.addEventListener("click", function (event){
     // display the main search html page 
     window.location = 'index.html' 
-
 })
 
 // event listener to view past search results
 
 searchedMoviesEl.addEventListener("click", function(event){
     var element = event.target;
-    console.log("Past search button is clicked");
     if (element.matches(".pastSearchBtn")) {
-var searchResults= element.textContent.split('/');
-console.log("what is in search result" + searchResults);
+    var searchResults= element.textContent.split('/');
 
-var searchName = searchResults[0];
-console.log("what is in search name" + searchName);
-var searchType = searchResults[1];
-console.log("what is in search type" + searchType);
+    var searchName = searchResults[0];
+    var searchType = searchResults[1];
 
-
-searchOMBdApi(searchName, searchType);
-searchGIFApi(searchName);
+    searchOMBdApi(searchName, searchType);
+    searchGIFApi(searchName);
     }        
 });
