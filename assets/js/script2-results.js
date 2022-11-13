@@ -9,7 +9,6 @@ var movieRatingsEl = document.getElementById('ratings')
 var moviePlotEl = document.getElementById('plot') 
 var goBackEl = document.getElementById('back-button') // this is the back button
 var searchedMoviesEl = document.getElementById('searchedMovies')
-
 var gifCollectionEl = document.querySelectorAll('img');
 
 // event listener to return to search page
@@ -22,7 +21,6 @@ goBackEl.addEventListener("click", function (event){
 })
 
 // event listener to view past search results
-
 searchedMoviesEl.addEventListener("click", function(event){
     var element = event.target;
     if (element.matches(".pastSearchBtn")) {
