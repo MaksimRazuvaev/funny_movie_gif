@@ -115,7 +115,7 @@ function displaySearchResultsLocStor(){
     // display search list
     var newLi = document.createElement("li");
     var newBtn = document.createElement("button");
-    newBtn.classList.add("pastSearchBtn");
+    newBtn.classList.add("localStorageBtns"); // changed pastSearchButton class parameter to localStorageBtns parameter class for styling additions. 
     searchedMoviesEl.append(newLi);
     newLi.append(newBtn);
     newBtn.textContent = searchList[i] + " / " + mediaList[i];
