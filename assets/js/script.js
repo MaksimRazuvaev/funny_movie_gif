@@ -74,7 +74,7 @@ function searchGIFApi(query) {
 
 // function to print result for oMBD
 function printResults(oMBdreply){
-  movieTitleEl.innerHTML = "Title: " + oMBdreply.Title;
+  movieTitleEl.innerHTML = oMBdreply.Title;
   movieYearEl.innerHTML = "Year: " + oMBdreply.Year;
   movieRatedEl.innerHTML = "Rated:" + oMBdreply.Rated;
   movieReleasedEl.innerHTML = "Released: " + oMBdreply.Released;
