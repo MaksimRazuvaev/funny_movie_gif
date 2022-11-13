@@ -6,7 +6,8 @@ var searchBtnEl = document.getElementById('btn');
 var arrSearchInput = [];
 var arrMediaType = [];
 
-
+// localStorage.setItem("searchInput", JSON.stringify(arrSearchInput));
+// localStorage.setItem("mediaType", JSON.stringify(arrMediaType));
 // event listeners
 
 // searchBtnEl.addEventListener("click", function (event){
@@ -23,12 +24,16 @@ var arrMediaType = [];
 
 function setLocalStorage(searchInputVal, mediaTypetVal){
 
+    var namesList = localStorage.getItem("searchInput");
+    var arrSearchInput = JSON.parse(namesList);
+
+    var namesList = localStorage.getItem("mediaType");
+    var arrMediaType = JSON.parse(namesList);
+
     arrSearchInput.push(searchInputVal);
     arrMediaType.push(mediaTypetVal);
 
     localStorage.setItem("searchInput", JSON.stringify(arrSearchInput));
     localStorage.setItem("mediaType", JSON.stringify(arrMediaType));
-
-
 }
 

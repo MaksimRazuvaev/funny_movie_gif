@@ -26,6 +26,7 @@ function getSearchRequest(event) {
  location.assign(queryString);
 
  setLocalStorage(userInputVal, mediaInputVal);
+
 }
 
 

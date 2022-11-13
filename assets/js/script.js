@@ -129,3 +129,4 @@ function displaySearchResultsLocStor(){
 
 handleSearchFormSubmit();
 displaySearchResultsLocStor();
+setLocalStorage(searchInputVal, mediaTypetVal);
