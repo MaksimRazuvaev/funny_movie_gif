@@ -15,7 +15,10 @@ var gifCollectionEl = document.querySelectorAll('img');
 // event listener to return to search page
 goBackEl.addEventListener("click", function (event){
     // display the main search html page 
-    window.location = 'index.html' 
+    window.location = 'index.html';
+    console.log("go back button is clicked first log");
+    removePastSearch();
+    console.log("go back button is clicked second log");
 })
 
 // event listener to view past search results

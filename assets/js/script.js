@@ -98,10 +98,6 @@ function displaySearchResultsLocStor(){
   var namList = localStorage.getItem("mediaType");
   var mediaList = JSON.parse(namList);
 
-  // remove elements before display
-  // var getliElmt = document.querySelector("li");
-  // console.log(getliElmt.length);
-
   // display past search for 6 elements
   for(var i=searchList.length-1; i > 0; i--) {
     var count = 0;
@@ -120,6 +116,16 @@ function displaySearchResultsLocStor(){
     }
   }
 }
+
+  // remove elements before display
+  function removePastSearch(){
+    var getliElmt = document.getElementById("searchedMovies");
+    var appendedLi = document.getElementsByTagName("li");
+    for(i=0; i>=appendedLi.length; i++){
+      appendedLi[i].remove();
+    }
+    console.log("remove search function is clicked");
+  }
 
 handleSearchFormSubmit();
 displaySearchResultsLocStor();

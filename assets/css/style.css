@@ -40,4 +40,5 @@ option {
 .pastSearchBtn {
   background-color: blue;
   color: beige;
+  width: 100%;
 }
