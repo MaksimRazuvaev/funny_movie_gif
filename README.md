@@ -31,7 +31,8 @@ https://developers.giphy.com/ .
 We also made use of the Bulma CSS Framework. It was a small learning curve in comparison to BootStrap, but in the end had very similar functionality, just different Syntax. 
 
 ## Screenshot of working application and URL link
-![ScreenShot of Deployed Application](/)
+![1st ScreenShot of Deployed Application](/p1-1_LIVE.png)
+![2nd ScreenShot of Deployed Application](/p1-2_LIVE.png)
 
 Deployed Website Link [Click Here!](https://maksimrazuvaev.github.io/funny_movie_gif/)
 
@@ -39,11 +40,11 @@ Deployed Website Link [Click Here!](https://maksimrazuvaev.github.io/funny_movie
 Using MIT License [Check it here!](https://opensource.org/licenses/MIT)
 
 --Creators--
-Maksim Razuvaeu - [LinkedIn Profile Link]()
+Maksim Razuvaeu - [LinkedIn Profile Link](https://www.linkedin.com/in/maksim-razuvaev/)
 --Handled the 1/2 JavaScript, the majority (if not all) of the API data
 Kyle Feldman - [LinkedIn Profile Link](https://www.linkedin.com/in/kyle-feldman-427b5624b)
 --Populated the Bulma Framework into the Application, and time management in the group
-Claire Bain - [LinkedIn Profile Link]()
+Claire Bain - [LinkedIn Profile Link](https://www.linkedin.com/in/clairembain/)
 --Handled all of the JavaScript DOM Hooks and 1/2 of the JavaScript
-Nathan Cruz - [LinkedIn Profile Link]()
+Nathan Cruz - [LinkedIn Profile Link](www.linkedin.com/in/nathancruz/)
 --Handled Setting up the HTML and creating Mock-ups, Assited with Bulma's intergration into our Application and pointed out many visual improvements we could make.
