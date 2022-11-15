@@ -103,7 +103,6 @@ function displaySearchResultsLocStor(){
   // display past search for 6 elements
   for(var i=searchList.length-1; i >= 0; i--) {
     var appendedLi = document.getElementsByTagName("li");
-    var count = 0;
     if (appendedLi.length == 6){
       appendedLi[6].remove();
     }else{
@@ -115,7 +114,6 @@ function displaySearchResultsLocStor(){
     searchedMoviesEl.append(newLi);
     newLi.append(newBtn);
     newBtn.textContent = searchList[i] + " / " + mediaList[i];
-    count++;
     }
   }
 }
