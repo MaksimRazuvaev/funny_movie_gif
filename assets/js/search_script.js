@@ -1,5 +1,6 @@
 var searchFormEl = document.querySelector('#search-form');
 
+// Get user unput on index.html page and switch to search-result page
 function getSearchRequest(event) {
   event.preventDefault();
 
@@ -13,9 +14,9 @@ function getSearchRequest(event) {
 
   var queryString = './search-results.html?t=' + userInputVal + '&type=' + mediaInputVal;
 
- location.assign(queryString);
+  location.assign(queryString);
 
- setLocalStorage(userInputVal, mediaInputVal);
+  setLocalStorage(userInputVal, mediaInputVal);
 }
 
 searchFormEl.addEventListener('submit', getSearchRequest);

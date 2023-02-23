@@ -1,5 +1,5 @@
 # funny_movie_gif
-this is group collaborative project .  
+This is a group collaborative project to entertain users with funny gifs during users' search for info about movies.  
 
 ## User Story
 AS A content consumer with a sense of humor,
@@ -27,6 +27,8 @@ We first needed some API's that would give us the data we were looking for, then
 The first API we used / choose for this application was the OMBd API, which can be found here: https://www.omdbapi.com/ . 
 The second API we used / choose was the Giphy API, which can be found here:
 https://developers.giphy.com/ .
+
+Other helpfull features of Javascript are DOM hooks and local storage.
 
 We also made use of the Bulma CSS Framework. It was a small learning curve in comparison to BootStrap, but in the end had very similar functionality, just different Syntax. 
 
