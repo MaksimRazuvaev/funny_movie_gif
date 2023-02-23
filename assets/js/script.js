@@ -10,40 +10,38 @@ function handleSearchFormSubmit() {
 
   searchOMBdApi(searchInputVal, mediaTypetVal);
   searchGIFApi(searchInputVal);
-
 }
 
   // request OMBdApi
-  function searchOMBdApi(query, type) {
-    var oMBdAPI = "https://www.omdbapi.com/?i=tt3896198&apikey=f90595f6";
+function searchOMBdApi(query, type) {
+  var oMBdAPI = "https://www.omdbapi.com/?i=tt3896198&apikey=f90595f6";
 
-    oMBdAPI = oMBdAPI + '&t=' + query;
+  oMBdAPI = oMBdAPI + '&t=' + query;
 
-    if (type) {
-      oMBdAPI = oMBdAPI + '&type=' + type;
-    }
-
-    fetch(oMBdAPI)
-      .then(function (response) {
-        if (!response.ok) {
-          throw response.json();
-        }
-  
-        return response.json();
-      })
-      .then(function (oMBdreply) {
-
-        if (!oMBdreply.Title) {
-          console.log('No results found!');
-        } else {
-            printResults(oMBdreply);
-        }
-      })
-      .catch(function (error) {
-        console.error(error);
-      });
-
+  if (type) {
+    oMBdAPI = oMBdAPI + '&type=' + type;
   }
+
+  fetch(oMBdAPI)
+    .then(function (response) {
+      if (!response.ok) {
+        throw response.json();
+      }
+
+      return response.json();
+    })
+    .then(function (oMBdreply) {
+
+      if (!oMBdreply.Title) {
+        console.log('No results found!');
+      } else {
+          printResults(oMBdreply);
+      }
+    })
+    .catch(function (error) {
+      console.error(error);
+    });
+}
 
 // request GIFs
 function searchGIFApi(query) {
